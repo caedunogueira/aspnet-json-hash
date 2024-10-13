@@ -6,7 +6,7 @@ namespace AspNetJsonHash.Tests.JsonHashes;
 public class SHA256JsonTests
 {
     [Fact]
-    public void GivenCustomObject_WhenComputeHash_ThenReturnItsHashAsSHA256()
+    public async Task GivenObject_WhenComputeHash_ThenReturnItsHashAsSHA256()
     {
         var myObject = new
         {
@@ -18,7 +18,7 @@ public class SHA256JsonTests
         var expectedHash = "6314107265BFA86D104F6C632F36364164DC39637891C6B1C324712D312B0331";
         var jsonHash = new SHA256Json<dynamic>();
 
-        var hash = jsonHash.Compute(myObject);
+        var hash = await jsonHash.ComputeAsync(myObject);
 
         hash.Should().Be(expectedHash);
     }

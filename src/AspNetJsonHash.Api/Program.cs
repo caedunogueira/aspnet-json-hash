@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("AspNetJsonHash.Tests")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
 
 var builder = WebApplication.CreateBuilder(args);
 
