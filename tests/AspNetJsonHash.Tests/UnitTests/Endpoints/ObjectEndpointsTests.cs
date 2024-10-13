@@ -4,7 +4,7 @@ using FluentAssertions;
 using Microsoft.AspNetCore.Http.HttpResults;
 using NSubstitute;
 
-namespace AspNetJsonHash.Tests.Endpoints;
+namespace AspNetJsonHash.Tests.UnitTests.Endpoints;
 
 public class ObjectEndpointsTests
 {

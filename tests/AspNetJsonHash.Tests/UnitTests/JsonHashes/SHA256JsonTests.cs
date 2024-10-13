@@ -1,7 +1,7 @@
 ﻿using AspNetJsonHash.Api.JsonHashes;
 using FluentAssertions;
 
-namespace AspNetJsonHash.Tests.JsonHashes;
+namespace AspNetJsonHash.Tests.UnitTests.JsonHashes;
 
 public class SHA256JsonTests
 {
