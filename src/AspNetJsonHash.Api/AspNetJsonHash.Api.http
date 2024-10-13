@@ -1,6 +1,11 @@
 @AspNetJsonHash.Api_HostAddress = http://localhost:5127
 
-GET {{AspNetJsonHash.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{AspNetJsonHash.Api_HostAddress}}/objects
+Content-Type: application/json
+Accept-Language: pt-BR,pt
+
+{
+  "Name": "Leandro Yuri Joaquim Rodrigues"
+}
 
 ###
